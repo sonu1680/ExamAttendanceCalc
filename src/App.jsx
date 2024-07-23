@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <>
-      <div className="main w-auto h-[120vh] flex justify-center">
+      <div className="main w-[550px]  md:w-full h-[120vh] flex justify-center">
         <div className="conatiner  h-[790px] w-[500px] bg-gray-900   flex justify-center items-center flex-col p-4  border-2 border-white rounded-xl  ">
           <div className="selection w-96 h-[120px] bg-gray-900 flex justify-between">
             {data.map((item) => (
