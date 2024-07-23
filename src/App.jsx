@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BunkAttendace from "./bunk";
 import CurrentAttendace from "./current";
 import ExamAttendance from "./examatnd";
+
 const App = () => {
   const data = [
     { id: 0, title: "Current Attendance" },
@@ -16,7 +17,7 @@ const App = () => {
 
   return (
     <>
-      <div className="main w-[550px]  md:w-full h-[120vh] flex justify-center">
+      <div className="main w-[550px]  md:w-full h-[120vh] flex  justify-center  flex-col items-center md:flex-row md:items-start  ">
         <div className="conatiner  h-[790px] w-[500px] bg-gray-900   flex justify-center items-center flex-col p-4  border-2 border-white rounded-xl  ">
           <div className="selection w-96 h-[120px] bg-gray-900 flex justify-between">
             {data.map((item) => (
@@ -42,6 +43,18 @@ const App = () => {
               <BunkAttendace />
             )}
           </div>
+        </div>
+        <div className=" developer flex flex-col justify-center items-center mt-12 ">
+          <a href="https://www.linkedin.com/in/sonu-kumar-pandit-563a6b254/">
+          <img
+            src="/linkedin.png"
+            className="w-20 h-20 mt-10 absolute right-[20%] hidden md:inline "
+            />
+            </a>
+          <a href="https://www.linkedin.com/in/sonu-kumar-pandit-563a6b254/">
+
+          <img src="/linkedin.png" className="w-20 h-20  md:hidden " />
+          </a>
         </div>
       </div>
     </>
